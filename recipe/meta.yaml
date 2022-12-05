@@ -18,14 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.7
     - jupyter-packaging
     - jupyterlab
   run:
-    - python
+    - python >=3.7
     - jupyterlab
     - jupyter
-    - ipywidgets>=7.6.0,<9
+    - ipywidgets >=7.6.0,<9
 
 test:
   imports:
