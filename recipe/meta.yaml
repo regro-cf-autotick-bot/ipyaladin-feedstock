@@ -18,10 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
+    - jupyter-packaging
+    - jupyterlab
   run:
-    - ipywidgets >=6.0.0
-    - python >=3.6
+    - python >=3.7
+    - jupyterlab
+    - jupyter
+    - ipywidgets >=7.6.0,<9
 
 test:
   imports:
@@ -33,9 +37,12 @@ test:
 
 about:
   home: https://github.com/cds-astro/ipyaladin
-  summary: ipyaladin
   license: BSD-3-Clause
   license_file: ipyaladin-LICENSE-BSD-3
+  summary: ipyaladin
+  description: ipyaladin, a Jupyter widget for Aladin Lite
+  doc_url: https://aladin.u-strasbg.fr/AladinLite/doc/API/
+  dev_url: https://github.com/cds-astro/ipyaladin
 
 extra:
   recipe-maintainers:
