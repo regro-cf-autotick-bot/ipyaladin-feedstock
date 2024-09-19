@@ -1,13 +1,13 @@
 {% set name = "ipyaladin" %}
-{% set version = "0.3.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ipyaladin-{{ version }}.tar.gz
-  sha256: dbbc76c2d666108d700b2f2ff7cbdd238ef2be690cb453ee1279f552dd28d2cb
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ipyaladin-{{ version }}.tar.gz
+  sha256: 06252d685c211ccada6ebee8c6b793d9a29ef6503e0a90fd2159e86f9d75c3b7
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - anywidget
-    - jupyterlab
+    - astropy
 
 test:
   imports:
@@ -35,12 +35,12 @@ test:
     - pip
 
 about:
-  home: https://github.com/cds-astro/ipyaladin
   license: BSD-3-Clause
-  license_file: ipyaladin-LICENSE-BSD-3
+  license_file: LICENSE.md
+  home: https://github.com/cds-astro/ipyaladin
   summary: ipyaladin
   description: ipyaladin, a Jupyter widget for Aladin Lite, the sky viewer
-  doc_url: https://aladin.u-strasbg.fr/AladinLite/doc/API/
+  doc_url: https://cds-astro.github.io/ipyaladin/
   dev_url: https://github.com/cds-astro/ipyaladin
 
 extra:
