@@ -25,6 +25,7 @@ requirements:
     - python >=3.8
     - anywidget
     - astropy
+    - astroquery
 
 test:
   imports:
