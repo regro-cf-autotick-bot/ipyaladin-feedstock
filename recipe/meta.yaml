@@ -10,7 +10,7 @@ source:
   sha256: eee74cb71bb6ff3b20f5dbf323bcbbaf69bf0b7c352bf523d29dc4533e6393a8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.8
     - anywidget
-    - astropy
+    - astropy-base
     - astroquery
 
 test:
